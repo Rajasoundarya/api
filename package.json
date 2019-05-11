@@ -1,0 +1,42 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Create api to register,login,crud",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "set DEBUG=* & nodemon app.js",
+    "lint": "eslint app.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rajasoundarya/api.git"
+  },
+  "author": "Rajasoundarya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rajasoundarya/api/issues"
+  },
+  "homepage": "https://github.com/Rajasoundarya/api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.2",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.2.2",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.10"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 5000
+    }
+  }
+}
